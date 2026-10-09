@@ -1,4 +1,4 @@
-# PLL_IHP
+# PLL in IHP SG13G2
 
 A charge-pump phase-locked loop designed in the IHP SG13G2 130 nm BiCMOS open PDK. The schematics are drawn in xschem and simulated in ngspice. The feedback divider is a behavioural Verilog-A model compiled to OSDI with OpenVAF, so the closed loop simulates in reasonable time.
 
@@ -48,7 +48,7 @@ From the commit history and testbenches:
 
 1. Inside IIC-OSIC-TOOLS (or an equivalent setup with the SG13G2 PDK at `/foss/pdks/ihp-sg13g2`), clone the repository to the path the schematics expect:
    ```sh
-   git clone https://github.com/rajinthanr/PLL_IHP.git /foss/designs/PLL_IHP_PDK
+   git clone https://github.com/rajinthanr/pll-ihp-sg13g2.git /foss/designs/PLL_IHP_PDK
    ```
    Symbols and the OSDI file are referenced as `/foss/designs/PLL_IHP_PDK/src/...`; to use another location, edit those paths in the `tb/*.sch` files.
 2. If `src/freq_div.osdi` does not load on your machine, or after editing the Verilog-A, rebuild it:
