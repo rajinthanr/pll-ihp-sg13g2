@@ -1,0 +1,11 @@
+# ngspice / xschem simulation output
+*.raw
+*.log
+*.out
+simulations/
+.spiceinit.bak
+
+# Klayout / Magic
+*.ext
+*.lyrdb
+*.bak
